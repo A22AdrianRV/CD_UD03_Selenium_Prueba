@@ -65,8 +65,11 @@ public class FormTest{
             driver.get("file:///home/sanclemente.local/a22adrianrv/Escritorio/CD_UD03_Selenium/src/index.html");
             Select menu = new Select(driver.findElement(By.name("menu")));
             menu.selectByIndex(0);
+            Thread.sleep(1000);
             menu.selectByValue("2");
+            Thread.sleep(1000);
             menu.selectByVisibleText("Tres");
+            Thread.sleep(1000);
             driver.close();
         } catch (Exception e) {
             // TODO: handle exception
